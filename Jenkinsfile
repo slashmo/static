@@ -7,7 +7,7 @@ pipeline {
         steps {
             echo 'Static Code Check...'
             sh 'pwd'
-            'ls -lh'
+            sh 'ls -lh'
             sh 'tidy -q -e *.html'
         }
     }
