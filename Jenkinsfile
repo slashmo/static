@@ -5,7 +5,7 @@ pipeline {
     
     stage('Lint HTML') {
         steps {
-            apt-get install tidy
+            ls -la
             echo 'Static Code Check...'
             sh 'tidy -q -e *.html'
         }
